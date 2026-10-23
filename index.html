@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#153f37"><meta name="description" content="从真实案例找到企业风险与相关保险。按 CEO、CFO、董事责任、网络安全、AI 失误与转账欺诈搜索。"><title>险知 · 企业风险案例库</title><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%23153f37'/%3E%3Cpath d='M11 12h18v14l-9 5-9-5z' fill='none' stroke='%23fff' stroke-width='2'/%3E%3Cpath d='m15 20 4 4 7-8' fill='none' stroke='%23cbe3a5' stroke-width='2'/%3E%3C/svg%3E"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="expansion.css"></head>
+<body>
+<a class="skip" href="#main">跳至主要内容</a>
+<aside class="sidebar" id="sidebar">
+ <a class="brand" href="#cases" aria-label="险知首页"><span class="brandmark"><svg viewBox="0 0 32 32" fill="none"><path d="M7 6h18v15l-9 6-9-6V6Z" stroke="currentColor" stroke-width="1.5"/><path d="m11 15 4 4 7-9" stroke="#cfe3a9" stroke-width="2"/></svg></span><span>险知<small>RISKSCOPE</small></span></a>
+ <div class="workspace-label">企业风险知识库 <span>V2.0</span></div>
+ <div class="nav-label">工作台</div>
+ <nav aria-label="主要导航">
+  <button class="nav-item active" data-view="cases"><span data-icon="grid"></span>案例库<span class="nav-count" id="total-count">20</span></button>
+  <button class="nav-item" data-view="guides"><span data-icon="book"></span>保险指南</button>
+  <button class="nav-item" data-view="saved"><span data-icon="bookmark"></span>我的收藏<span class="nav-count" id="saved-count">0</span></button>
+  <button class="nav-item" data-view="sources"><span data-icon="link"></span>资料与来源</button>
+ </nav>
+ <div class="nav-label category-label">按风险探索</div>
+ <div class="side-categories" aria-label="全部风险类型">
+  <button data-cat="do"><i class="dot do"></i>高管与董事责任<span id="count-do"></span></button>
+  <button data-cat="cyber"><i class="dot cyber"></i>网络与数据安全<span id="count-cyber"></span></button>
+  <button data-cat="pi"><i class="dot pi"></i>AI 与专业失误<span id="count-pi"></span></button>
+  <button data-cat="crime"><i class="dot crime"></i>资金与欺诈风险<span id="count-crime"></span></button>
+ </div>
+ <div class="side-bottom"><div class="small-shield" data-icon="shield"></div><strong>让决策，多一份依据。</strong><p>从真实发生的事，<br>看见企业需要的保障。</p><span class="version">扩展案例库 · 2026.10</span></div>
+</aside>
+<div class="shell">
+ <header class="topbar"><div class="crumb"><button class="mobile-menu icon-button" aria-label="打开导航" id="mobile-menu" data-icon="menu"></button><span>知识工作台</span><b>/</b><strong id="breadcrumb">案例库</strong></div><div class="header-right"><span class="verified-dot"></span><span>公开来源核对 · 2026.10.22</span><span class="avatar" title="企业主视角">企</span></div></header>
+ <main id="main" tabindex="-1">
+ <section id="library-view">
+  <section class="hero">
+   <div class="hero-copy"><div class="eyebrow"><span></span>从案例出发，理解保险</div><h1>不懂保险术语，<br>也能找到风险的答案<span>。</span></h1><p>从高管责任，到用工、产品、财产和经营风险，<br class="desktop-br">找到相似经历，再了解相关保障。</p><div class="hero-stats"><span><strong id="hero-count">50</strong>真实案例</span><i></i><span><strong id="hero-guide-count">16</strong>类保险保障</span><i></i><span class="source-promise"><span data-icon="check-circle"></span>每例附来源</span></div></div>
+   <div class="hero-visual" aria-hidden="true"><div class="orb orb-one"></div><div class="orb orb-two"></div><div class="orb orb-three"></div><div class="visual-core"><svg viewBox="0 0 70 80" fill="none"><path d="M10 14 35 5l25 9v30c0 14-25 30-25 30S10 58 10 44V14Z" fill="#245448" stroke="#769d83"/><path d="m23 38 9 9 17-20" stroke="#d3e3a9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="floating-label label-one"><i class="dot do"></i>管理决策</div><div class="floating-label label-two"><i class="dot cyber"></i>数据与信任</div><div class="floating-label label-three"><i class="dot pi"></i>专业交付</div><span class="visual-caption">UNDERSTAND RISK. MAKE BETTER DECISIONS.</span></div>
+  </section>
+  <section class="search-section" aria-label="搜索案例"><form id="search-form" class="search-box"><span data-icon="search"></span><input id="search" type="search" autocomplete="off" placeholder="试试「财报出错」「股东起诉」或「假冒老板转账」" aria-label="搜索风险关键词、公司或保险类型"><kbd>/</kbd><button type="submit">搜索案例<span data-icon="arrow-right"></span></button></form><div class="hot-search"><span>大家都在关注</span><button data-query="CEO">CEO 被追责</button><button data-query="财报出错">财报出错</button><button data-query="数据泄露">数据泄露</button><button data-query="AI出错">AI 出错</button><button data-query="假冒老板">假冒老板</button></div></section>
+  <section class="results-section" aria-label="案例浏览">
+   <div class="section-heading"><div><span class="overline" id="results-overline">THE CASE LIBRARY</span><h2 id="results-title">真实案例，值得借鉴<span id="result-count">20</span></h2></div><button class="text-button" id="clear-filters"><span data-icon="sliders"></span>重置筛选</button></div>
+   <div class="category-tabs" role="group" aria-label="风险分类"><button class="selected" data-cat="all">全部案例</button><button data-cat="do">高管责任</button><button data-cat="cyber">网络安全</button><button data-cat="pi">专业失误</button><button data-cat="crime">资金欺诈</button></div>
+   <div class="insurance-select-row"><label for="insurance">按相关保险查找</label><select id="insurance"><option value="">全部险种（含次要关联）</option></select><span>同一个事件，可能涉及多种保障</span></div>
+   <div class="filterbar"><div class="select-wrap"><label for="role">关注角色</label><select id="role"><option value="">全部角色</option><option>CEO</option><option>CFO</option><option>董事</option><option>独立董事</option><option>实际控制人</option><option>财务负责人</option><option>信息安全负责人</option><option>专业服务负责人</option><option>合伙人</option></select></div><div class="select-wrap"><label for="region">适用场景地区</label><select id="region"><option value="">全部地区</option><option>中国香港</option><option>美国</option><option>英国</option></select></div><div class="select-wrap"><label for="evidence">保险证据</label><select id="evidence"><option value="">全部证据类型</option><option value="arrangement">保险人付款安排</option><option value="recovery">保险付款或回收披露</option><option value="coverage">承保争议判决</option><option value="risk">风险事件案例</option></select></div><div class="sort-wrap"><label for="sort">排序</label><select id="sort"><option value="relevance">推荐顺序</option><option value="newest">最近事件节点</option></select></div></div>
+   <div id="query-context" class="query-context" hidden></div><div id="match-note" class="match-note" hidden></div>
+   <div id="case-grid" class="case-grid" aria-live="polite"></div>
+   <div id="empty" class="empty" hidden><span data-icon="search"></span><h3>暂时没有匹配的案例</h3><p>试试更短的词，比如“财报”“董事”或“AI”，也可以减少筛选条件。</p><button class="primary-button" id="empty-reset">查看全部案例</button></div>
+   <div class="list-end" id="list-end">— 当前匹配案例，全部已展示 —</div>
+  </section>
+  <section class="help-strip"><div class="help-icon" data-icon="compass"></div><div><h3>不确定从哪种保险开始？</h3><p>从“担心发生什么”，认识责任、财产和经营保障。</p></div><button class="text-button" data-view="guides">查看保险指南<span data-icon="arrow-right"></span></button></section>
+ </section>
+ <section id="guides-view" hidden></section>
+ <section id="sources-view" hidden></section>
+ <footer><span>险知 RISKSCOPE <i> / </i> 企业风险案例库</span><p>险种匹配为风险教育分析，不构成承保确认。实际保障须以适用法律及保单条款为准。</p></footer>
+ </main>
+</div>
+<div class="compare-tray" id="compare-tray" hidden><div><strong id="compare-count">已选择 0 个案例</strong><span>最多对比 3 个，找出共同风险</span></div><button class="text-button" id="compare-clear">清空</button><button class="primary-button" id="compare-open">开始对比<span data-icon="arrow-right"></span></button></div>
+<dialog id="detail-dialog" aria-label="案例详情"><div id="detail-content"></div></dialog>
+<dialog id="compare-dialog" aria-label="案例对比"><div id="compare-content"></div></dialog>
+<div id="toast" role="status" class="toast"></div>
+<script src="data.js"></script><script src="expanded-data.js"></script><script src="engine.js"></script><script src="app.js"></script>
+</body></html>

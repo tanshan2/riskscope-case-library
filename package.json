@@ -1,0 +1,14 @@
+{
+  "name": "riskscope-case-library",
+  "version": "2.0.0",
+  "private": true,
+  "description": "险知：50 个公开真实案例与 16 类企业保险指南",
+  "scripts": {
+    "start": "node serve.cjs",
+    "test": "node --test search.test.cjs expansion.test.cjs && node validate.cjs",
+    "build": "node expand-data.cjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
